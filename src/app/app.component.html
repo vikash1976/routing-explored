@@ -1,0 +1,12 @@
+<div class="container">
+<h1>
+  {{title}}
+</h1>
+<!--(click)="goToUsers()"-->
+<nav>
+  <a routerLink="/topiclist" routerLinkActive="active" class="btn btn-default">Topics</a>
+  <a routerLink="/userlist" routerLinkActive="active" class="btn btn-default">Users</a>
+  <a routerLink="/scores" routerLinkActive="active" class="btn btn-default">Scores</a>
+</nav>
+<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,9 @@
+<h2>Topic List</h2>
+<h3>{{aCommonData}}</h3>
+<button class="btn btn-default" (click)="updateCommonData('New Value from Topiclist')">
+  Update1</button>
+<div class="list-group">
+  <a [routerLink]="['/topiclist', topic.id]" class="list-group-item" *ngFor="let topic of topics">
+    <span class="badge">{{ topic.id }}</span><label>{{topic.description}}</label>
+  </a>
+</div>

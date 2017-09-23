@@ -1,0 +1,12 @@
+<h2>User List</h2>
+<h3>{{aCommonData}}</h3>
+<button class="btn btn-default" (click)="updateCommonData('New Value from Userlist')">
+Update2
+</button>
+<div class="list-group">
+  <a [routerLink]="[user.id, user.name]" [queryParams]="{'rank':user.id + 30}" href="#" class="list-group-item" [class.selected]="isSelected(user)"
+    *ngFor="let user of users">
+    <span class="badge">{{ user.id }}</span>{{user.name}}
+    </a>
+    <router-outlet></router-outlet>
+</div>

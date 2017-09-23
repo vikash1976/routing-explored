@@ -1,0 +1,7 @@
+<p *ngIf="message; else defaultMessage"
+class="error text-danger">
+  {{message}}
+</p>
+<ng-template #defaultMessage>
+  <p class="error text-danger">Page Not Found!!!</p>
+</ng-template>
